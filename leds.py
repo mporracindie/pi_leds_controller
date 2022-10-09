@@ -11,7 +11,7 @@ import sys
 
 bright = 255
 
-def setLights(pin, brightness):
+def set_lights(pin, brightness):
 	realBrightness = int(int(brightness) * (float(bright) / 255.0))
 	pi.set_PWM_dutycycle(pin, realBrightness)
 
@@ -26,17 +26,17 @@ def turn_leds_on():
 	r = 255.0
 	g = 36.0
 	b = 226.0
-	setLights(RED_PIN, r)
-	setLights(GREEN_PIN, g)
-	setLights(BLUE_PIN, b)
+	set_lights(RED_PIN, r)
+	set_lights(GREEN_PIN, g)
+	set_lights(BLUE_PIN, b)
 
 def turn_leds_off():
 	r = 0.0
 	g = 0.0
 	b = 0.0
-	setLights(RED_PIN, r)
-	setLights(GREEN_PIN, g)
-	setLights(BLUE_PIN, b)
+	set_lights(RED_PIN, r)
+	set_lights(GREEN_PIN, g)
+	set_lights(BLUE_PIN, b)
 
 pi = pigpio.pi() 
 
