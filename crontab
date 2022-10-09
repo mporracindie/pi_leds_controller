@@ -1,0 +1,2 @@
+0 19 * * * python3 /home/pi/experiments/pi_leds_controller/leds.py smart_on
+0 0 * * * python3 /home/pi/experiments/pi_leds_controller/leds.py off
